@@ -21,7 +21,7 @@ namespace DeviceClientMultiplexing
         private static bool _pooling = true; // Enable or disable pooling (multiplexing)
         private static uint _maxPoolSize = 2; 
         private static int _sendIterations = 10; // Number of send message iterations
-        private static int _delayBetweenSendInterations = 10000; // Delay between send iterations, in ms
+        private static int _delayBetweenSendIterations = 10000; // Delay between send iterations, in ms
 
         // Replace with you IoT Hub owner connection string
         private static string _iotHubConnString = "<your IoT Hub owner connection string>";
@@ -130,7 +130,7 @@ namespace DeviceClientMultiplexing
 
                 });
                 
-                await Task.Delay(_delayBetweenSendInterations);
+                await Task.Delay(_delayBetweenSendIterations);
 
             }
 
